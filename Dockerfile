@@ -7,6 +7,7 @@ WORKDIR /app
 # Copy the source code and build files
 COPY . .
 
+RUN chmod +x ./gradlew
 # Build the Spring Boot application using Gradle (Change if using Maven)
 RUN ./gradlew clean build
 
